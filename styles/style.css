@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 1em;
+  font-family: 'Rubik', sans-serif;
+  background-color: #161616;
+  color: white;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.btn:hover {
+  background-color: #58be92;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 920px;
+  margin-inline: auto;
+  background-color: #313131;
+  padding: 0.2rem 2rem;
+  border-radius: 45px;
+  margin-top: 2rem;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+  margin-left: 1.5em;
+  text-transform: capitalize;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  text-align: center;
+  margin-block: 10rem;
+}
+
+main h1 {
+  font-size: 3rem;
+}
+
+main p {
+  font-size: 1.3rem;
+}
+
+main a {
+  background-color: #29ad76;
+  padding: .75em 3em;
+  border-radius: .5em;
+  margin: 2rem;
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+section {
+  max-width: 1220px;
+  margin-inline: auto;
+  padding-block: 5rem;
+}
+
+section .title {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+section .title h1 {
+  font-size: 2rem;
+}
+
+section .title p {
+  font-size: 1.2rem;
+}
+
+section .product-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+section .item {
+  border: 1px solid #4d4d4d;
+  background-color: #0e0e0e;
+  border-radius: .7rem;
+  padding: 1.5rem;
+}
+
+section .item p {
+  color: gray;
+}
+
+section .plans-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+section .plans-grid .plans-item {
+  border-radius: .7rem;
+  padding-top: 2em;
+  border: 1px solid #4d4d4d;
+  background-color: #0e0e0e;
+}
+
+section .plans-grid h1, section .plans-grid h3 {
+  text-align: center;
+}
+
+section .plans-grid h1 {
+  font-weight: lighter;
+  font-size: 1.3rem;
+  color: #bbbbbb;
+  margin: .8rem;
+}
+
+section .plans-grid h3 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+section .plans-grid ul {
+  margin-block: 3rem;
+  font-size: 1.1rem;
+}
+
+section .plans-grid li {
+  color: gray;
+  margin: 1rem;
+}
+
+section .plans-grid .button {
+  display: block;
+  text-align: center;
+  max-width: 100%;
+  background-color: #29ad76;
+  padding: 1rem;
+  font-size: 1.1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-end-start-radius: .7rem;
+  border-end-end-radius: .7rem;
+}
+
+section .plans-grid .button:hover {
+  background-color: #58be92;
+}
+
+section .statistic-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+section .statistic-grid h1, section .statistic-grid h2 {
+  text-align: center;
+}
+
+section .statistic-grid h2 {
+  font-weight: lighter;
+}
+
+@media (max-width: 920px) {
+  section .product-grid, section .statistic-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 740px) {
+  section .plans-grid {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  section .product-grid, section .plans-grid, section .statistic-grid {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+footer {
+  background-color: black;
+}
+
+.wrapper {
+  max-width: 1220px;
+  margin-inline: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding-block: 5rem;
+}
+
+.wrapper li {
+  list-style: none;
+  line-height: 1.5;
+  font-weight: lighter;
+  color: gray;
+}
+
+.wrapper .brand p {
+  max-width: 90%;
+  color: gray;
+}
+
+.wrapper ul {
+  padding: 0;
+  text-align: right;
+}
+
+@media (max-width: 740px) {
+  footer {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+  footer .brand p {
+    margin: auto;
+    max-width: 100%;
+  }
+  footer li {
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
